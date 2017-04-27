@@ -13,6 +13,3 @@ RUN apk update && \
     rm -fr /var/cache/apk/*
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
-
-RUN bundle config --global build.nokogiri --use-system-libraries && \
-    bundle install -j4
